@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare and Aged Care Flooring — JA Floors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { DEFAULT: '#123049', dark: '#0c2035' },
+            slate: '#51606F',
+            sand: { DEFAULT: '#D7B690', cta: '#C4975E', hover: '#b8883f', light: '#e8d4b8' },
+            stone: '#E9E4DE',
+            clean: '#F7F8F8',
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'sans-serif'],
+            body: ['Source Sans 3', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body { font-family: 'Source Sans 3', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="bg-clean text-slate antialiased">
+  <nav class="sticky top-0 z-50 bg-navy border-b-2 border-sand">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2"><svg class="h-6 w-auto" viewBox="0 0 120.8128 143.5522" fill="#D7B690" xmlns="http://www.w3.org/2000/svg"><path d="m65.7207,143.5522h-12.5766C23.84,143.5522,0,121.1045,0,93.5128v-32.5344h86.9761v16.3602H16.3602v16.1742c0,18.5709,16.5011,33.6792,36.7839,33.6792h12.5766c20.633,0,38.7319-15.7379,38.7319-33.6792V16.3602H16.3602v20.072H0V0h120.8128v93.5128c0,27.124-25.2293,50.0395-55.0921,50.0395Z"/><path d="m88.1158,105.5481h-16.3602v-46.0893c0-8.8325-5.3966-12.8554-10.4107-12.8554h-3.7342c-5.0141,0-10.4107,4.023-10.4107,12.8554v45.328h-16.3602v-45.328c0-16.6557,11.5089-29.2157,26.771-29.2157h3.7342c15.2621,0,26.771,12.5599,26.771,29.2157v46.0893Z"/></svg><span class="font-heading font-bold text-lg tracking-wider text-white">JA <span class="text-sand">FLOORS</span></span></a>
+      <div class="hidden md:flex items-center gap-1">
+        <a href="index.html" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">Home</a>
+        <div class="relative group">
+          <a href="#" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">Sectors</a>
+          <div class="hidden group-hover:block absolute top-full left-0 mt-1 bg-navy border border-white/10 rounded-md shadow-xl min-w-[260px] py-2">
+            <a href="healthcare.html" class="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/10">Healthcare and Aged Care</a>
+            <a href="kitchens.html" class="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/10">Commercial Kitchens</a>
+            <a href="fitouts.html" class="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/10">Office Fit-outs</a>
+            <a href="cleanrooms.html" class="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/10">Clean Rooms and Labs</a>
+          </div>
+        </div>
+        <a href="capabilities.html" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">Capabilities</a>
+        <a href="about.html" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">About</a>
+        <a href="contact.html" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">Contact</a>
+        <a href="quote.html" class="ml-2 px-5 py-2 text-sm font-semibold bg-sand-cta text-white rounded hover:bg-sand-hover transition">Request a Quote</a>
+      </div>
+      <button class="md:hidden text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-navy-dark border-t border-white/10 px-5 py-4 space-y-2">
+      <a href="index.html" class="block py-2 text-sm text-white/80">Home</a>
+      <a href="healthcare.html" class="block py-2 text-sm text-white/60 pl-3">Healthcare and Aged Care</a>
+      <a href="kitchens.html" class="block py-2 text-sm text-white/60 pl-3">Commercial Kitchens</a>
+      <a href="fitouts.html" class="block py-2 text-sm text-white/60 pl-3">Office Fit-outs</a>
+      <a href="cleanrooms.html" class="block py-2 text-sm text-white/60 pl-3">Clean Rooms and Labs</a>
+      <a href="capabilities.html" class="block py-2 text-sm text-white/80">Capabilities</a>
+      <a href="about.html" class="block py-2 text-sm text-white/80">About</a>
+      <a href="contact.html" class="block py-2 text-sm text-white/80">Contact</a>
+      <a href="quote.html" class="block py-2.5 mt-2 text-sm font-semibold bg-sand-cta text-white rounded text-center">Request a Quote</a>
+    </div>
+  </nav>
+
+  <section class="bg-navy py-12 md:py-16 border-b-4 border-sand">
+    <div class="max-w-6xl mx-auto px-5">
+      <p class="font-heading text-xs font-semibold uppercase tracking-[0.15em] text-sand mb-2">Legal</p>
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-3">Terms and Conditions</h1>
+      <p class="text-base text-white/60 max-w-xl">Terms governing the use of the JA Floors website.</p>
+    </div>
+  </section>
+
+  <section class="py-14">
+    <div class="max-w-3xl mx-auto px-5 text-sm leading-relaxed space-y-6">
+
+      <p>These terms and conditions govern your use of the JA Floors website at jafloors.com.au ("the website"). By accessing and using this website, you agree to be bound by these terms. If you do not agree, please do not use the website.</p>
+
+      <h2 class="font-heading text-lg font-bold text-navy pt-4">About JA Floors</h2>
+      <p>JA Floors ABN [to be inserted] provides commercial flooring preparation, supply and installation services across Melbourne and regional Victoria. The website is intended to provide general information about our services and to facilitate project enquiries.</p>
+
+      <h2 class="font-heading text-lg font-bold text-navy pt-4">Use of the website</h2>
+      <p>You agree to use this website only for lawful purposes and in a manner that does not infringe the rights of, restrict or inhibit the use of this website by any third party. You must not use the website to transmit any material that is defamatory, offensive, or otherwise objectionable.</p>
+
+      <h2 class="font-heading text-lg font-bold text-navy pt-4">Information accuracy</h2>
+      <p>While we make reasonable efforts to ensure the information on this website is accurate and up to date, we do not warrant or guarantee the accuracy, completeness or reliability of any content. Information on the website is provided for general guidance only and does not constitute professional advice. Project-specific advice, pricing and recommendations are provided directly through our quote and consultation process.</p>
+
+      <h2 class="font-heading text-lg font-bold text-navy pt-4">Quote requests</h2>
+      <p>Submitting a quote request through the website does not constitute a binding agreement or contract. All quotes provided by JA Floors are subject to site inspection, scope confirmation and formal written acceptance by both parties before any work commences.</p>
+
+      <h2 class="font-heading text-lg font-bold text-navy pt-4">Intellectual property</h2>
+      <p>All content on this website, including text, images, graphics, logos and design, is the property of JA Floors or its licensors and is protected by Australian and international copyright laws. You may not reproduce, distribute, modify or republish any content from this website without our prior written consent.</p>
+
+      <h2 class="font-heading text-lg font-bold text-navy pt-4">Third-party links</h2>
+      <p>This website may contain links to third-party websites. These links are provided for convenience only and do not imply endorsement of or responsibility for the content of those websites. We are not liable for any loss or damage arising from your use of third-party websites.</p>
+
+      <h2 class="font-heading text-lg font-bold text-navy pt-4">Limitation of liability</h2>
+      <p>To the maximum extent permitted by law, JA Floors excludes all liability for any loss or damage (including indirect or consequential loss) arising from or in connection with the use of this website or reliance on any information provided on it. Nothing in these terms excludes or limits liability that cannot be excluded or limited under Australian Consumer Law.</p>
+
+      <h2 class="font-heading text-lg font-bold text-navy pt-4">Indemnity</h2>
+      <p>You agree to indemnify and hold harmless JA Floors, its officers, employees and agents from any claims, losses, damages, liabilities and expenses (including legal fees) arising from your use of the website or breach of these terms.</p>
+
+      <h2 class="font-heading text-lg font-bold text-navy pt-4">Governing law</h2>
+      <p>These terms are governed by the laws of the State of Victoria, Australia. You agree to submit to the exclusive jurisdiction of the courts of Victoria for any disputes arising from or in connection with these terms or your use of the website.</p>
+
+      <h2 class="font-heading text-lg font-bold text-navy pt-4">Changes to these terms</h2>
+      <p>We may update these terms from time to time. Any changes will be posted on this page and take effect immediately upon posting. Your continued use of the website after any changes constitutes acceptance of the updated terms.</p>
+
+      <h2 class="font-heading text-lg font-bold text-navy pt-4">Contact</h2>
+      <p>If you have questions about these terms, please contact us:</p>
+      <p>Email: <a href="mailto:enquiries@jafloors.com.au" class="text-navy font-semibold hover:text-sand-cta">enquiries@jafloors.com.au</a><br>
+      Phone: <a href="tel:0390460618" class="text-navy font-semibold hover:text-sand-cta">(03) 9046 0618</a></p>
+
+      <p class="text-xs text-slate/50 pt-4">Last updated: April 2026</p>
+
+    </div>
+  </section>
+
+  <footer class="bg-navy-dark text-white/50 text-sm py-12">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+        <div class="col-span-2 md:col-span-1">
+          <h4 class="font-heading text-xs font-semibold uppercase tracking-wider text-white mb-3">JA Floors</h4>
+          <p class="leading-relaxed mb-2">Commercial flooring across Melbourne for fit-outs, healthcare, kitchens and controlled environments.</p>
+          <p>Phone: <a href="tel:0390460618" class="hover:text-sand">(03) 9046 0618</a></p>
+        </div>
+        <div><h4 class="font-heading text-xs font-semibold uppercase tracking-wider text-white mb-3">Sectors</h4><a href="healthcare.html" class="block py-0.5 hover:text-sand">Healthcare</a><a href="kitchens.html" class="block py-0.5 hover:text-sand">Kitchens</a><a href="fitouts.html" class="block py-0.5 hover:text-sand">Fit-outs</a><a href="cleanrooms.html" class="block py-0.5 hover:text-sand">Clean Rooms</a></div>
+        <div><h4 class="font-heading text-xs font-semibold uppercase tracking-wider text-white mb-3">Company</h4><a href="capabilities.html" class="block py-0.5 hover:text-sand">Capabilities</a><a href="about.html" class="block py-0.5 hover:text-sand">About</a><a href="quote.html" class="block py-0.5 hover:text-sand">Request a Quote</a><a href="contact.html" class="block py-0.5 hover:text-sand">Contact</a></div>
+        <div><h4 class="font-heading text-xs font-semibold uppercase tracking-wider text-white mb-3">Legal</h4><a href="privacy.html" class="block py-0.5 hover:text-sand">Privacy Policy</a><a href="terms.html" class="block py-0.5 hover:text-sand">Terms</a></div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/30">
+        <span>&copy; 2026 JA Floors. All rights reserved.</span>
+        <div class="flex gap-4"><a href="privacy.html" class="hover:text-sand">Privacy</a><a href="terms.html" class="hover:text-sand">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

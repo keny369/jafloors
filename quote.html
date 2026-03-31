@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare and Aged Care Flooring — JA Floors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { DEFAULT: '#123049', dark: '#0c2035' },
+            slate: '#51606F',
+            sand: { DEFAULT: '#D7B690', cta: '#C4975E', hover: '#b8883f', light: '#e8d4b8' },
+            stone: '#E9E4DE',
+            clean: '#F7F8F8',
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'sans-serif'],
+            body: ['Source Sans 3', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body { font-family: 'Source Sans 3', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="bg-clean text-slate antialiased">
+  <nav class="sticky top-0 z-50 bg-navy border-b-2 border-sand">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2"><svg class="h-6 w-auto" viewBox="0 0 120.8128 143.5522" fill="#D7B690" xmlns="http://www.w3.org/2000/svg"><path d="m65.7207,143.5522h-12.5766C23.84,143.5522,0,121.1045,0,93.5128v-32.5344h86.9761v16.3602H16.3602v16.1742c0,18.5709,16.5011,33.6792,36.7839,33.6792h12.5766c20.633,0,38.7319-15.7379,38.7319-33.6792V16.3602H16.3602v20.072H0V0h120.8128v93.5128c0,27.124-25.2293,50.0395-55.0921,50.0395Z"/><path d="m88.1158,105.5481h-16.3602v-46.0893c0-8.8325-5.3966-12.8554-10.4107-12.8554h-3.7342c-5.0141,0-10.4107,4.023-10.4107,12.8554v45.328h-16.3602v-45.328c0-16.6557,11.5089-29.2157,26.771-29.2157h3.7342c15.2621,0,26.771,12.5599,26.771,29.2157v46.0893Z"/></svg><span class="font-heading font-bold text-lg tracking-wider text-white">JA <span class="text-sand">FLOORS</span></span></a>
+      <div class="hidden md:flex items-center gap-1">
+        <a href="index.html" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">Home</a>
+        <div class="relative group">
+          <a href="#" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">Sectors</a>
+          <div class="hidden group-hover:block absolute top-full left-0 mt-1 bg-navy border border-white/10 rounded-md shadow-xl min-w-[260px] py-2">
+            <a href="healthcare.html" class="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/10">Healthcare and Aged Care</a>
+            <a href="kitchens.html" class="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/10">Commercial Kitchens</a>
+            <a href="fitouts.html" class="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/10">Office Fit-outs</a>
+            <a href="cleanrooms.html" class="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/10">Clean Rooms and Labs</a>
+          </div>
+        </div>
+        <a href="capabilities.html" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">Capabilities</a>
+        <a href="about.html" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">About</a>
+        <a href="contact.html" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">Contact</a>
+        <a href="quote.html" class="ml-2 px-5 py-2 text-sm font-semibold bg-sand-cta text-white rounded hover:bg-sand-hover transition">Request a Quote</a>
+      </div>
+      <button class="md:hidden text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-navy-dark border-t border-white/10 px-5 py-4 space-y-2">
+      <a href="index.html" class="block py-2 text-sm text-white/80">Home</a>
+      <a href="healthcare.html" class="block py-2 text-sm text-white/60 pl-3">Healthcare and Aged Care</a>
+      <a href="kitchens.html" class="block py-2 text-sm text-white/60 pl-3">Commercial Kitchens</a>
+      <a href="fitouts.html" class="block py-2 text-sm text-white/60 pl-3">Office Fit-outs</a>
+      <a href="cleanrooms.html" class="block py-2 text-sm text-white/60 pl-3">Clean Rooms and Labs</a>
+      <a href="capabilities.html" class="block py-2 text-sm text-white/80">Capabilities</a>
+      <a href="about.html" class="block py-2 text-sm text-white/80">About</a>
+      <a href="contact.html" class="block py-2 text-sm text-white/80">Contact</a>
+      <a href="quote.html" class="block py-2.5 mt-2 text-sm font-semibold bg-sand-cta text-white rounded text-center">Request a Quote</a>
+    </div>
+  </nav>
+  <section class="bg-navy py-12 md:py-16 border-b-4 border-sand"><div class="max-w-6xl mx-auto px-5">
+    <p class="font-heading text-xs font-semibold uppercase tracking-[0.15em] text-sand mb-2">Get Started</p>
+    <h1 class="text-3xl md:text-4xl font-bold text-white mb-3">Request a Quote</h1>
+    <p class="text-base text-white/60 max-w-xl">The more detail you provide, the faster we can respond with a practical recommendation.</p>
+  </div></section>
+  <section class="py-14"><div class="max-w-3xl mx-auto px-5"><form class="space-y-5">
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div><label class="block font-heading text-xs font-semibold text-navy mb-1.5">Project Type</label><select class="w-full px-3 py-2.5 border border-stone rounded text-sm bg-white text-navy focus:border-sand focus:outline-none"><option value="">Select</option><option>Fit-out</option><option>Make-good</option><option>Maintenance</option><option>New build</option><option>Other</option><option>Refurbishment</option></select></div>
+      <div><label class="block font-heading text-xs font-semibold text-navy mb-1.5">Sector</label><select class="w-full px-3 py-2.5 border border-stone rounded text-sm bg-white text-navy focus:border-sand focus:outline-none"><option value="">Select</option><option>Clean Room / Lab</option><option>Healthcare</option><option>Industrial</option><option>Kitchen</option><option>Office Fit-out</option><option>Other</option><option>Retail</option></select></div>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div><label class="block font-heading text-xs font-semibold text-navy mb-1.5">Location</label><input type="text" placeholder="e.g. Richmond, Melbourne" class="w-full px-3 py-2.5 border border-stone rounded text-sm bg-white text-navy focus:border-sand focus:outline-none"></div>
+      <div><label class="block font-heading text-xs font-semibold text-navy mb-1.5">Size (m²)</label><input type="text" placeholder="e.g. 200" class="w-full px-3 py-2.5 border border-stone rounded text-sm bg-white text-navy focus:border-sand focus:outline-none"></div>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div><label class="block font-heading text-xs font-semibold text-navy mb-1.5">Project Stage</label><select class="w-full px-3 py-2.5 border border-stone rounded text-sm bg-white text-navy focus:border-sand focus:outline-none"><option value="">Select</option><option>Construction</option><option>Documentation</option><option>Planning</option><option>Tender</option><option>Urgent</option></select></div>
+      <div><label class="block font-heading text-xs font-semibold text-navy mb-1.5">Timing</label><input type="text" placeholder="e.g. Start in 4 weeks" class="w-full px-3 py-2.5 border border-stone rounded text-sm bg-white text-navy focus:border-sand focus:outline-none"></div>
+    </div>
+    <hr class="border-stone">
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div><label class="block font-heading text-xs font-semibold text-navy mb-1.5">Your Name</label><input type="text" placeholder="Full name" required class="w-full px-3 py-2.5 border border-stone rounded text-sm bg-white text-navy focus:border-sand focus:outline-none"></div>
+      <div><label class="block font-heading text-xs font-semibold text-navy mb-1.5">Company</label><input type="text" placeholder="Company name" class="w-full px-3 py-2.5 border border-stone rounded text-sm bg-white text-navy focus:border-sand focus:outline-none"></div>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div><label class="block font-heading text-xs font-semibold text-navy mb-1.5">Phone</label><input type="tel" placeholder="Phone number" required class="w-full px-3 py-2.5 border border-stone rounded text-sm bg-white text-navy focus:border-sand focus:outline-none"></div>
+      <div><label class="block font-heading text-xs font-semibold text-navy mb-1.5">Email</label><input type="email" placeholder="Email address" required class="w-full px-3 py-2.5 border border-stone rounded text-sm bg-white text-navy focus:border-sand focus:outline-none"></div>
+    </div>
+    <div><label class="block font-heading text-xs font-semibold text-navy mb-1.5">Substrate, finish or site conditions?</label><textarea rows="3" placeholder="Optional — any relevant detail." class="w-full px-3 py-2.5 border border-stone rounded text-sm bg-white text-navy focus:border-sand focus:outline-none resize-y"></textarea></div>
+    <button type="submit" class="px-7 py-3 bg-sand-cta text-white font-heading font-bold text-sm rounded hover:bg-sand-hover transition">Submit Quote Request</button>
+  </form>
+  <div class="mt-8 pt-6 border-t border-stone text-sm">
+    <p>Prefer to talk? <a href="tel:0390460618" class="font-semibold text-navy">(03) 9046 0618</a> or <a href="mailto:enquiries@jafloors.com.au" class="font-semibold text-navy">enquiries@jafloors.com.au</a></p>
+    <p class="text-xs text-slate/50 mt-1">We aim to respond within one business day.</p>
+  </div></div></section>
+
+  <footer class="bg-navy-dark text-white/50 text-sm py-12">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+        <div class="col-span-2 md:col-span-1">
+          <h4 class="font-heading text-xs font-semibold uppercase tracking-wider text-white mb-3">JA Floors</h4>
+          <p class="leading-relaxed mb-2">Commercial flooring across Melbourne for fit-outs, healthcare, kitchens and controlled environments.</p>
+          <p>Phone: <a href="tel:0390460618" class="hover:text-sand">(03) 9046 0618</a></p>
+        </div>
+        <div><h4 class="font-heading text-xs font-semibold uppercase tracking-wider text-white mb-3">Sectors</h4><a href="healthcare.html" class="block py-0.5 hover:text-sand">Healthcare</a><a href="kitchens.html" class="block py-0.5 hover:text-sand">Kitchens</a><a href="fitouts.html" class="block py-0.5 hover:text-sand">Fit-outs</a><a href="cleanrooms.html" class="block py-0.5 hover:text-sand">Clean Rooms</a></div>
+        <div><h4 class="font-heading text-xs font-semibold uppercase tracking-wider text-white mb-3">Company</h4><a href="capabilities.html" class="block py-0.5 hover:text-sand">Capabilities</a><a href="about.html" class="block py-0.5 hover:text-sand">About</a><a href="quote.html" class="block py-0.5 hover:text-sand">Request a Quote</a><a href="contact.html" class="block py-0.5 hover:text-sand">Contact</a></div>
+        <div><h4 class="font-heading text-xs font-semibold uppercase tracking-wider text-white mb-3">Legal</h4><a href="privacy.html" class="block py-0.5 hover:text-sand">Privacy Policy</a><a href="terms.html" class="block py-0.5 hover:text-sand">Terms</a></div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/30">
+        <span>&copy; 2025 JA Floors. All rights reserved.</span>
+        <div class="flex gap-4"><a href="privacy.html" class="hover:text-sand">Privacy</a><a href="terms.html" class="hover:text-sand">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

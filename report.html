@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Mockup Review — JA Floors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { DEFAULT: '#123049', dark: '#0c2035' },
+            slate: '#51606F',
+            sand: { DEFAULT: '#D7B690', cta: '#C4975E', hover: '#b8883f', light: '#e8d4b8' },
+            stone: '#E9E4DE',
+            clean: '#F7F8F8',
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'sans-serif'],
+            body: ['Source Sans 3', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body { font-family: 'Source Sans 3', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+    .prose p { margin-bottom: 1rem; }
+    .prose h2 { margin-top: 3rem; margin-bottom: 1rem; }
+    .prose h3 { margin-top: 2rem; margin-bottom: 0.75rem; }
+  </style>
+</head>
+<body class="bg-clean text-slate antialiased">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-navy border-b-2 border-sand">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2"><svg class="h-6 w-auto" viewBox="0 0 120.8128 143.5522" fill="#D7B690" xmlns="http://www.w3.org/2000/svg"><path d="m65.7207,143.5522h-12.5766C23.84,143.5522,0,121.1045,0,93.5128v-32.5344h86.9761v16.3602H16.3602v16.1742c0,18.5709,16.5011,33.6792,36.7839,33.6792h12.5766c20.633,0,38.7319-15.7379,38.7319-33.6792V16.3602H16.3602v20.072H0V0h120.8128v93.5128c0,27.124-25.2293,50.0395-55.0921,50.0395Z"/><path d="m88.1158,105.5481h-16.3602v-46.0893c0-8.8325-5.3966-12.8554-10.4107-12.8554h-3.7342c-5.0141,0-10.4107,4.023-10.4107,12.8554v45.328h-16.3602v-45.328c0-16.6557,11.5089-29.2157,26.771-29.2157h3.7342c15.2621,0,26.771,12.5599,26.771,29.2157v46.0893Z"/></svg><span class="font-heading font-bold text-lg tracking-wider text-white">JA <span class="text-sand">FLOORS</span></span></a>
+      <div class="hidden md:flex items-center gap-1">
+        <a href="index.html" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">Home</a>
+        <a href="report.html" class="px-3 py-1.5 text-sm font-medium text-white/90 hover:text-white hover:bg-white/10 rounded">Mockup Review</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-navy py-12 md:py-16 border-b-4 border-sand">
+    <div class="max-w-6xl mx-auto px-5">
+      <p class="font-heading text-xs font-semibold uppercase tracking-[0.15em] text-sand mb-2">Mockup Review</p>
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-3 max-w-3xl">JA Floors Website Mockup</h1>
+      <p class="text-base text-white/60 max-w-xl leading-relaxed">Static HTML mockup for review before full implementation. This document explains the structure, copy direction and design decisions behind each page.</p>
+      <div class="mt-6 text-sm text-white/40">
+        <p>Prepared by: Lee Powell, Lumen and Lever</p>
+        <p>For: Josh Anderson, JA Floors</p>
+        <p>Scope: Option A - Website Rebuild ($5,000)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Report Content -->
+  <section class="py-14">
+    <div class="max-w-3xl mx-auto px-5 prose">
+
+      <h2 class="font-heading text-2xl font-bold text-navy">What this is</h2>
+
+      <p>This is the static HTML mockup of the new JA Floors website. It contains nine pages built to the structure and scope defined in our Option A agreement. The pages use placeholder images from placehold.co, which will be replaced with real project photography as you supply it. The layout, navigation, content hierarchy and copy direction are all set and ready for your review.</p>
+
+      <p>Once you have reviewed these pages and confirmed you are happy with the structure and direction, we will move into the full Ruby on Rails implementation. Nothing in the final build will change structurally from what you see here unless you ask for it. The purpose of this mockup stage is to lock the architecture before writing production code, not after.</p>
+
+      <p>The mockup is published as static HTML on GitHub Pages so you can click through the full site on any device and see exactly how it reads and flows.</p>
+
+      <h2 class="font-heading text-2xl font-bold text-navy">Site architecture</h2>
+
+      <p>The site has nine pages arranged around four structural ideas that came directly out of the research we did before writing the options paper.</p>
+
+      <p>First, sector-first navigation. The current jafloors.com.au site leads with service pages: concrete polishing, concrete grinding, floor levelling, epoxy flooring, commercial vinyl. That structure positions JA Floors as a broad trade service. The new structure leads with sectors: healthcare, kitchens, fit-outs, controlled environments. That shift means a builder or facility manager sees their own environment in the navigation before they see a list of products. Every competitor we reviewed that performs well commercially does some version of this.</p>
+
+      <p>Second, capability grouping instead of service listing. The old service pages (concrete grinding, floor levelling, epoxy, vinyl, grind and seal) have been consolidated into four capability buckets: substrate preparation, vinyl/rubber/wall sheet systems, resin and protective coatings, and concrete finishes. This follows the content architecture review recommendation to organise capability around buyer relevance rather than SEO service labels. The old page titles like "Concrete Grinding Across Melbourne" drag the positioning back toward commodity trade language. The new structure does not.</p>
+
+      <p>Third, a qualified enquiry path. The current site uses a generic contact form and "free quote" framing. The new site separates Contact (light, secondary) from Request a Quote (structured intake form with project type, sector, size, stage, timing). The competitor review identified weak lead capture as one of the biggest gaps across the Melbourne commercial flooring market. This form does not need to be complex, but it does need to ask the right questions so Josh can triage enquiries and respond with something useful.</p>
+
+      <p>Fourth, legal pages kept off the sales path. Privacy Policy and Terms and Conditions stay live but sit in the footer only. They do not appear in the main navigation. This is standard practice and the content review recommends it explicitly.</p>
+
+      <h2 class="font-heading text-2xl font-bold text-navy">Page by page</h2>
+
+      <h3 class="font-heading text-lg font-semibold text-navy">Homepage</h3>
+      <p><a href="index.html" class="text-sand-cta font-semibold hover:underline">View page</a></p>
+
+      <p>The homepage has five sections, each with a specific job. The hero establishes who JA Floors is and what environments they work in. The line "Commercial flooring for fit-outs, healthcare and specialist environments" comes directly from the capability statement and does more explanatory work in one sentence than a shorter tagline would. A first-time visitor from a commercial background should be able to read that headline and know immediately whether this business is relevant to them.</p>
+
+      <p>Below the hero, a trust strip carries three short proof points: geographic scope (Melbourne), service scope (preparation through installation), and sector focus (healthcare, kitchen, fit-out and controlled environments). We removed "Established 2006" from an earlier version because the logo already carries "Est. 2008" and the short text was throwing off the visual balance of the strip.</p>
+
+      <p>The sector cards are the centre of the page. Four cards, one for each target sector, each linking to its own sector page. This is the mechanism by which the site stops reading as "we do everything" and starts reading as "we understand your environment." The competitor review and content architecture review both treat this as the single highest-priority structural change.</p>
+
+      <p>The capabilities summary gives a high-level view of the four capability buckets without repeating the detail from the Capabilities page. It is there so a visitor who does not click into a sector page still sees that JA Floors covers preparation, vinyl systems, resin systems and concrete finishes.</p>
+
+      <p>The page ends with a quote CTA. Every page on the site ends with a path to the quote form or a phone number. There is no dead end.</p>
+
+      <h3 class="font-heading text-lg font-semibold text-navy">Healthcare and Aged Care</h3>
+      <p><a href="healthcare.html" class="text-sand-cta font-semibold hover:underline">View page</a></p>
+
+      <p>The four sector pages all follow an identical structure. This is deliberate. It reduces design cost, reduces review cycles, and makes the site feel composed rather than improvised. The healthcare page is the template for all four.</p>
+
+      <p>Each sector page has three sections: environment challenges (what the floor has to handle), relevant systems (which products and methods suit this environment), and how we work (a short paragraph on how JA Floors delivers in this type of setting).</p>
+
+      <p>For healthcare specifically, the copy speaks to hygiene, cleanability, durability under wheeled traffic, slip resistance, compliance awareness, noise reduction, and minimal disruption in occupied facilities. It does not claim certifications or compliance credentials that JA Floors does not hold. The content review is explicit about this: the tone should be suitability-focused, not compliance-theatrical. The systems listed are the ones actually relevant to healthcare environments (sheet vinyl, safety vinyl, rubber, wall sheet, coved skirting).</p>
+
+      <h3 class="font-heading text-lg font-semibold text-navy">Commercial Kitchens and Back-of-House</h3>
+      <p><a href="kitchens.html" class="text-sand-cta font-semibold hover:underline">View page</a></p>
+
+      <p>Same structure as healthcare. The copy shifts to wash-down suitability, slip resistance in greasy conditions, chemical resistance, thermal shock, and fast turnaround. The content review says this page should feel operational, not decorative. The systems listed reflect that: polyurethane resin, epoxy, safety vinyl, coved skirting, drain integration.</p>
+
+      <h3 class="font-heading text-lg font-semibold text-navy">Office Fit-outs and Refurbishment</h3>
+      <p><a href="fitouts.html" class="text-sand-cta font-semibold hover:underline">View page</a></p>
+
+      <p>Same structure. The copy here is about program pressure, substrate unknowns, coordination with other trades, occupied-building constraints, and handover readiness. This is the page that speaks most directly to fit-out builders and project managers. It does not lead with aesthetics. It leads with the practical reality that flooring sits on the critical path and substrate condition is usually unknown until strip-out is complete.</p>
+
+      <h3 class="font-heading text-lg font-semibold text-navy">Clean Rooms, Labs and Controlled Environments</h3>
+      <p><a href="cleanrooms.html" class="text-sand-cta font-semibold hover:underline">View page</a></p>
+
+      <p>Same structure. The copy uses disciplined language around precision, surface consistency, seamless transitions, chemical resistance and installation sequencing within commissioning timelines. The content review says explicitly: do not overclaim specialist certifications. The current copy follows that instruction. JA Floors can talk about the quality of their preparation and finish work without pretending to own pharma-grade certifications.</p>
+
+      <h3 class="font-heading text-lg font-semibold text-navy">Capabilities</h3>
+      <p><a href="capabilities.html" class="text-sand-cta font-semibold hover:underline">View page</a></p>
+
+      <p>Four sections, one per capability bucket. Each section answers three questions: where it fits, why it matters operationally, and which environments it suits. This structure replaces the old service pages (concrete polishing, concrete grinding, grind and seal, floor levelling, commercial vinyl, epoxy flooring) which the content review recommends retiring from the primary site architecture. Those old pages read as tactical service labels and in some cases drift into residential language (homes, garages, decorative concrete). The new capability structure keeps the same technical scope but frames it for commercial buyers.</p>
+
+      <h3 class="font-heading text-lg font-semibold text-navy">About JA Floors</h3>
+      <p><a href="about.html" class="text-sand-cta font-semibold hover:underline">View page</a></p>
+
+      <p>The About page carries the company story, the process sequence (review, specify, prepare, install, handover), and four short blocks on what clients can expect. This is where "coordinated installation and site delivery" lives. In an earlier version of the brief, coordination was sitting in the capabilities taxonomy as a fifth bucket. We moved it here because it is a delivery trait, not a product or system class. The About page is the right home for it.</p>
+
+      <p>The process steps come from the capability statement and give a buyer a visible, simple model of how jobs are run. The competitor review identified that most commercial flooring firms in Melbourne do not make their process visible on their websites. Showing it is a low-cost trust signal.</p>
+
+      <h3 class="font-heading text-lg font-semibold text-navy">Request a Quote</h3>
+      <p><a href="quote.html" class="text-sand-cta font-semibold hover:underline">View page</a></p>
+
+      <p>The form captures: project type, sector, location, approximate size, project stage, timing, name, company, phone, email, and an optional free-text field for substrate or site condition notes. This is the "basic qualification" level specified in the options paper for Option A. It is not the full intake logic that sits in Options B and C.</p>
+
+      <p>The form is laid out in two columns on desktop so fields sit at a sensible width. Phone numbers and email addresses do not need to stretch across 900 pixels. Select fields are sorted alphabetically. The form ends with a single submit button and a secondary note pointing to the phone number and email for people who prefer to call.</p>
+
+      <h3 class="font-heading text-lg font-semibold text-navy">Contact</h3>
+      <p><a href="contact.html" class="text-sand-cta font-semibold hover:underline">View page</a></p>
+
+      <p>Lighter than the quote page by design. Phone, direct line, email, service area, hours, and a callout box directing serious project enquiries to the quote form. The content review says Contact should feel practical and secondary to the quote path. That is what this page does.</p>
+
+
+      <h2 class="font-heading text-2xl font-bold text-navy">Phone number and email decisions</h2>
+
+      <p>The site uses a Melbourne landline (03) 9046 0618 as the primary phone number across all pages. Josh's mobile appears only on the Contact page, labelled "Direct Line - Josh Anderson."</p>
+
+      <p>The reason is positioning. A mobile number as the only contact across a commercial website signals sole trader to the types of buyers JA Floors wants to attract. Fit-out builders working for Tier 2 contractors and healthcare procurement officers are used to dealing with businesses that have office numbers. A Melbourne 03 landline reads as "established Melbourne business" without requiring a physical office or a receptionist. It can forward directly to Josh's mobile. The setup takes about ten minutes with any VoIP provider and costs a few dollars a month.</p>
+
+      <p>We considered a 1300 number but decided against it. In consumer services a 1300 number signals scale. In the commercial trades and construction space it can signal the opposite. Builders do not want to call a 1300 number and wonder whether they will reach a person or a call queue. A direct Melbourne number is more appropriate for this market and this business size.</p>
+
+      <p>The email across the site is enquiries@jafloors.com.au instead of Josh's personal address. Same logic: it reads as a business, not a person. It can forward to Josh's inbox. His personal email does not appear anywhere on the public site.</p>
+
+
+      <h2 class="font-heading text-2xl font-bold text-navy" id="photo-recommendations">Photography recommendations</h2>
+
+      <p>Every placeholder image on the mockup site will need to be replaced with real project photography before the site can do its job properly. The content architecture review is direct about this: the site's commercial credibility depends on showing real work in real environments. Stock photography of polished concrete bedrooms (which is what the current site uses) actively undermines the commercial positioning.</p>
+
+      <h3 class="font-heading text-lg font-semibold text-navy">What to shoot</h3>
+
+      <p>The site needs roughly 27 to 36 images spread across the following slots:</p>
+
+      <div class="bg-stone rounded p-5 my-4 text-sm space-y-3">
+        <div><span class="font-heading font-semibold text-navy">Homepage (8-10 images):</span> One hero image of a finished commercial environment, four sector card images (one per sector showing that environment type), two to three capability/process shots, and one team or founder image for the trust strip area.</div>
+        <div><span class="font-heading font-semibold text-navy">Each sector page x4 (3-4 images each, 12-16 total):</span> One lead image showing the environment type, one to two supporting images (install in progress, finished detail, or before/after), one image for the "how we work" section.</div>
+        <div><span class="font-heading font-semibold text-navy">Capabilities (4 images):</span> One image per capability bucket. Substrate prep action shot, vinyl installation detail, resin application, concrete finish.</div>
+        <div><span class="font-heading font-semibold text-navy">About (2-3 images):</span> Founder portrait or team on site, one operational/supervision image.</div>
+        <div><span class="font-heading font-semibold text-navy">Contact (1 image):</span> Simple operational image or map. Could be skipped entirely.</div>
+        <div><span class="font-heading font-semibold text-navy">Quote (0 images):</span> None needed.</div>
+      </div>
+
+      <h3 class="font-heading text-lg font-semibold text-navy">How to shoot</h3>
+
+      <p>The branding pack recommends real project photography showing context rather than abstract material close-ups. That means a treatment room corridor with sheet vinyl installed, not a swatch. A commercial kitchen floor in use, not a texture sample. The environment should be visible around the floor so the viewer understands the setting.</p>
+
+      <p>Process images are valuable. The content review notes that competitors tend to show only finished glamour shots. JA Floors can differentiate by also showing preparation discipline: grinding in progress, levelling compound application, laser levels on substrate, crew working on a live commercial site. These images signal competence in a way that a polished finished photo alone does not.</p>
+
+      <p>Before/during/after sequences are ideal for the sector pages. Even two images showing the same area at different stages tell a stronger story than a single beauty shot.</p>
+
+      <h3 class="font-heading text-lg font-semibold text-navy">Photo format and consistency</h3>
+
+      <p>All images should be supplied as high-resolution JPEGs at a minimum of 2000 pixels on the longest edge. This gives enough resolution for full-width hero images on desktop screens and allows cropping for different aspect ratios across the site.</p>
+
+      <p>To make the photography feel cohesive across the site rather than like a random collection of phone snapshots, all images should be post-processed with a consistent treatment before going live. This does not need to be elaborate. A single Lightroom preset or equivalent applied across all images is enough. The treatment should:</p>
+
+      <div class="bg-stone rounded p-5 my-4 text-sm space-y-2">
+        <div>Correct white balance so colours are neutral and consistent across different site conditions and lighting</div>
+        <div>Slightly desaturate to avoid oversaturated oranges and blues that look cheap on screen</div>
+        <div>Lift shadows gently so dark areas have detail without looking flat</div>
+        <div>Apply a very light grain to unify images taken on different cameras or phones</div>
+        <div>Straighten all horizontal and vertical lines (critical for flooring images where edges and walls are visible)</div>
+        <div>Crop to consistent aspect ratios matching the placeholder dimensions in the mockup</div>
+      </div>
+
+      <p>If Josh is shooting on a phone (which is fine for most of these), shoot in the highest quality setting, avoid zoom, shoot in good natural light where possible, and keep the phone level. Vertical lines that lean inward because the phone was tilted look amateur in any context but especially in construction and flooring photography where straight lines are the entire point.</p>
+
+      <p>We can handle the post-processing and cropping on our end if the raw images are supplied at sufficient resolution. A shared Google Drive folder sorted by sector and tagged with project type would be the simplest way to manage this.</p>
+
+
+      <h2 class="font-heading text-2xl font-bold text-navy">Colour and typography</h2>
+
+      <p>The site uses the palette from the branding pack prepared earlier in this engagement:</p>
+
+      <div class="grid grid-cols-5 gap-3 my-4">
+        <div class="text-center"><div class="h-12 rounded bg-navy mb-2"></div><p class="text-xs font-heading font-semibold text-navy">Deep Navy<br>#123049</p></div>
+        <div class="text-center"><div class="h-12 rounded bg-slate mb-2"></div><p class="text-xs font-heading font-semibold text-navy">Steel Slate<br>#51606F</p></div>
+        <div class="text-center"><div class="h-12 rounded bg-sand mb-2"></div><p class="text-xs font-heading font-semibold text-navy">Warm Sand<br>#D7B690</p></div>
+        <div class="text-center"><div class="h-12 rounded bg-stone mb-2"></div><p class="text-xs font-heading font-semibold text-navy">Soft Stone<br>#E9E4DE</p></div>
+        <div class="text-center"><div class="h-12 rounded border border-stone mb-2" style="background:#F7F8F8;"></div><p class="text-xs font-heading font-semibold text-navy">Clean White<br>#F7F8F8</p></div>
+      </div>
+
+      <p>Primary call-to-action buttons use a more saturated version of the sand (#C4975E, closer to copper) with white text to give them stronger visual weight against the muted background palette. Decorative elements like section labels, border accents and bullet markers stay in the softer sand. This separation means the things you actually want people to click stand out from the things that are just visual structure.</p>
+
+      <p>Typography is Montserrat for headings and Source Sans 3 for body copy, both loaded from Google Fonts. The branding pack recommends a clean sans-serif pairing with moderate weight and generous spacing. This is that.</p>
+
+
+      <h2 class="font-heading text-2xl font-bold text-navy">How this connects to JA Floors' goals</h2>
+
+      <p>The options paper was clear about the problem: JA Floors has real commercial capability and a base of repeat clients, but the current website presents the business as a broad flooring operator. The stronger competitors in Melbourne are not doing better work. They are presenting their work in a way that makes commercial buyers feel confident shortlisting them.</p>
+
+      <p>This mockup addresses that gap at the Option A level. It is not a full repositioning. It does not include formal positioning research, a brand identity refresh, case studies, a proof pack, or sales collateral. Those belong to Options B and C. What it does deliver is a structurally different website that:</p>
+
+      <div class="bg-stone rounded p-5 my-4 text-sm space-y-2">
+        <div>Leads with sectors instead of generic service pages, so commercial buyers see their own environment in the navigation</div>
+        <div>Groups capability around buyer relevance rather than old SEO labels</div>
+        <div>Provides a qualified enquiry form that captures enough project detail to respond usefully</div>
+        <div>Removes residential language, generic "free quote" framing, and broad trade positioning</div>
+        <div>Uses a phone number and email structure that reads as an established commercial operation</div>
+        <div>Maintains a consistent, composed visual identity using the branding pack palette and typography</div>
+      </div>
+
+      <p>The competitor analysis showed that Lockwood, Floorcon, Asset Flooring Group and Contract Floors all use some form of sector-first or proof-led structure. JA Floors does not need to copy them. But the site does need to meet the baseline expectation that a commercial buyer has when they are shortlisting flooring contractors. This mockup meets that baseline.</p>
+
+      <p>It is a lean commercial qualification site. It is not a mini-repositioning platform. That distinction matters because it keeps the build within the agreed scope and budget while still delivering the structural shift that the research said was necessary.</p>
+
+
+      <h2 class="font-heading text-2xl font-bold text-navy">URL migration note</h2>
+
+      <p>The current site has standalone pages for concrete polishing, concrete grinding, grind and seal, floor levelling, commercial vinyl, and epoxy flooring. Those URLs will break when the new site goes live. Even if their search traffic is modest, basic 301 redirects should be part of the launch checklist so existing URLs resolve to the closest relevant destination on the new site. This is not a grand SEO project. It is basic hygiene. We will prepare the redirect map as part of the Rails build.</p>
+
+
+      <h2 class="font-heading text-2xl font-bold text-navy">What I need from you</h2>
+
+      <p>Review the nine pages linked from this document. Click through them on your phone and on a desktop screen. The things I need you to confirm:</p>
+
+      <div class="bg-stone rounded p-5 my-4 text-sm space-y-2">
+        <div>1. Is the page structure right? Are the right pages here and are any missing?</div>
+        <div>2. Does the copy direction feel accurate? Are there claims that are wrong or things that should be said differently?</div>
+        <div>3. Are the four sector pages targeting the right environments in the right order of priority?</div>
+        <div>4. Is the quote form asking the right questions?</div>
+        <div>5. Are you comfortable with the phone number and email approach outlined above?</div>
+        <div>6. Can you start collecting project photos per the recommendations in this document?</div>
+      </div>
+
+      <p>Once you have reviewed and confirmed, we move into the Rails build. The structure will not change from what you see here unless you ask for changes during this review.</p>
+
+      <div class="mt-12 pt-8 border-t border-stone">
+        <p class="text-sm text-slate/60">Lee Powell / Lumen and Lever / lumenandlever.com</p>
+        <p class="text-sm text-slate/60">Option A - Website Rebuild / JA Floors</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy-dark text-white/50 text-sm py-12">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/30">
+        <span>&copy; 2025 JA Floors. All rights reserved.</span>
+        <span>Mockup review document - not for public distribution</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare and Aged Care Flooring — JA Floors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { DEFAULT: '#123049', dark: '#0c2035' },
+            slate: '#51606F',
+            sand: { DEFAULT: '#D7B690', cta: '#C4975E', hover: '#b8883f', light: '#e8d4b8' },
+            stone: '#E9E4DE',
+            clean: '#F7F8F8',
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'sans-serif'],
+            body: ['Source Sans 3', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body { font-family: 'Source Sans 3', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="bg-clean text-slate antialiased">
+  <nav class="sticky top-0 z-50 bg-navy border-b-2 border-sand">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2"><svg class="h-6 w-auto" viewBox="0 0 120.8128 143.5522" fill="#D7B690" xmlns="http://www.w3.org/2000/svg"><path d="m65.7207,143.5522h-12.5766C23.84,143.5522,0,121.1045,0,93.5128v-32.5344h86.9761v16.3602H16.3602v16.1742c0,18.5709,16.5011,33.6792,36.7839,33.6792h12.5766c20.633,0,38.7319-15.7379,38.7319-33.6792V16.3602H16.3602v20.072H0V0h120.8128v93.5128c0,27.124-25.2293,50.0395-55.0921,50.0395Z"/><path d="m88.1158,105.5481h-16.3602v-46.0893c0-8.8325-5.3966-12.8554-10.4107-12.8554h-3.7342c-5.0141,0-10.4107,4.023-10.4107,12.8554v45.328h-16.3602v-45.328c0-16.6557,11.5089-29.2157,26.771-29.2157h3.7342c15.2621,0,26.771,12.5599,26.771,29.2157v46.0893Z"/></svg><span class="font-heading font-bold text-lg tracking-wider text-white">JA <span class="text-sand">FLOORS</span></span></a>
+      <div class="hidden md:flex items-center gap-1">
+        <a href="index.html" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">Home</a>
+        <div class="relative group">
+          <a href="#" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">Sectors</a>
+          <div class="hidden group-hover:block absolute top-full left-0 mt-1 bg-navy border border-white/10 rounded-md shadow-xl min-w-[260px] py-2">
+            <a href="healthcare.html" class="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/10">Healthcare and Aged Care</a>
+            <a href="kitchens.html" class="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/10">Commercial Kitchens</a>
+            <a href="fitouts.html" class="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/10">Office Fit-outs</a>
+            <a href="cleanrooms.html" class="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/10">Clean Rooms and Labs</a>
+          </div>
+        </div>
+        <a href="capabilities.html" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">Capabilities</a>
+        <a href="about.html" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">About</a>
+        <a href="photo-guide.html" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">Photo Guide</a>
+        <a href="feedback.html" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">Feedback</a>
+        <a href="contact.html" class="px-3 py-1.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 rounded">Contact</a>
+        <a href="quote.html" class="ml-2 px-5 py-2 text-sm font-semibold bg-sand-cta text-white rounded hover:bg-sand-hover transition">Request a Quote</a>
+      </div>
+      <button class="md:hidden text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-navy-dark border-t border-white/10 px-5 py-4 space-y-2">
+      <a href="index.html" class="block py-2 text-sm text-white/80">Home</a>
+      <a href="healthcare.html" class="block py-2 text-sm text-white/60 pl-3">Healthcare and Aged Care</a>
+      <a href="kitchens.html" class="block py-2 text-sm text-white/60 pl-3">Commercial Kitchens</a>
+      <a href="fitouts.html" class="block py-2 text-sm text-white/60 pl-3">Office Fit-outs</a>
+      <a href="cleanrooms.html" class="block py-2 text-sm text-white/60 pl-3">Clean Rooms and Labs</a>
+      <a href="capabilities.html" class="block py-2 text-sm text-white/80">Capabilities</a>
+      <a href="about.html" class="block py-2 text-sm text-white/80">About</a>
+      <a href="contact.html" class="block py-2 text-sm text-white/80">Contact</a>
+      <a href="quote.html" class="block py-2.5 mt-2 text-sm font-semibold bg-sand-cta text-white rounded text-center">Request a Quote</a>
+    </div>
+  </nav>
+
+  <section class="bg-navy py-12 md:py-16 border-b-4 border-sand">
+    <div class="max-w-6xl mx-auto px-5">
+      <p class="font-heading text-xs font-semibold uppercase tracking-[0.15em] text-sand mb-2">Feedback Response</p>
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-3 max-w-3xl">Your feedback and what we did with it</h1>
+      <p class="text-base text-white/60 max-w-xl leading-relaxed">Summary of the feedback received, what was implemented, what was held back and why, and remaining questions.</p>
+    </div>
+  </section>
+
+  <section class="py-14"><div class="max-w-3xl mx-auto px-5 prose">
+
+    <h2 class="font-heading text-2xl font-bold text-navy">What was implemented</h2>
+
+    <p>The following changes have been made to the mockup based on your feedback. All of these are now live in the current version of the site pages.</p>
+
+    <div class="space-y-4 my-6">
+      <div class="bg-stone rounded p-5">
+        <h3 class="font-heading font-semibold text-navy text-sm mb-2">1. Hygienic Wall Sheeting split out as its own capability</h3>
+        <p class="text-sm">Wall sheeting has been separated from the vinyl/rubber bucket and now sits as a 5th capability section on the capabilities page under "Hygienic Wall Sheeting Systems." The copy covers healthcare, kitchens, labs and controlled environments. This makes sense because it is a distinct product category and a genuine differentiator for JA Floors.</p>
+      </div>
+
+      <div class="bg-stone rounded p-5">
+        <h3 class="font-heading font-semibold text-navy text-sm mb-2">2. Ride-on stripping and floor strip-outs added to substrate preparation</h3>
+        <p class="text-sm">Both are now referenced in the substrate preparation section on the capabilities page and in the homepage summary. These are legitimate capability details that sit naturally under preparation work.</p>
+      </div>
+
+      <div class="bg-stone rounded p-5">
+        <h3 class="font-heading font-semibold text-navy text-sm mb-2">3. Micro-topping and Architop added to concrete finishes</h3>
+        <p class="text-sm">The concrete finishes capability section now references micro-topping and Architop as decorative concrete options. The homepage heading has been updated to "Concrete Finishes and Decorative Surfaces" to reflect this. These are premium products that differentiate JA Floors from standard grind-and-seal operators.</p>
+      </div>
+
+      <div class="bg-stone rounded p-5">
+        <h3 class="font-heading font-semibold text-navy text-sm mb-2">4. Medi-seal and impervious carpet added to healthcare systems</h3>
+        <p class="text-sm">Both now appear in the healthcare sector page systems grid. These are specific enough to be meaningful to the healthcare buyer audience.</p>
+      </div>
+
+      <div class="bg-stone rounded p-5">
+        <h3 class="font-heading font-semibold text-navy text-sm mb-2">5. Hygienic wall sheeting added to clean rooms and kitchens</h3>
+        <p class="text-sm">Both the clean rooms and kitchens sector pages now include hygienic wall sheeting in their systems grids. If it is being delivered in those environments, it belongs on those pages.</p>
+      </div>
+
+      <div class="bg-stone rounded p-5">
+        <h3 class="font-heading font-semibold text-navy text-sm mb-2">6. Decorative concrete and cork tiles added to office fit-outs</h3>
+        <p class="text-sm">The fit-outs systems grid now includes decorative concrete (micro-topping, Architop) and cork tiles (labelled as sustainable, low-allergen). The "how we work" copy on that page also now mentions cork and Marmoleum for projects where tenants and building owners are specifying environmentally responsible materials. Cork is gaining real momentum in the office market right now and it is worth signalling that JA Floors works with it.</p>
+      </div>
+
+      <div class="bg-stone rounded p-5">
+        <h3 class="font-heading font-semibold text-navy text-sm mb-2">7. Real project photos placed across the site</h3>
+        <p class="text-sm">16 of 18 image slots now use real project photography from the supplied set. The full mapping is in the <a href="photo-guide.html" class="text-sand-cta font-semibold hover:underline">photo guide</a>. One placeholder remains (concrete finishes on the capabilities page, no suitable image in the current set). The contact page uses the AI-generated building image.</p>
+      </div>
+    </div>
+
+
+    <h2 class="font-heading text-2xl font-bold text-navy">What was held back and why</h2>
+
+    <div class="space-y-4 my-6">
+      <div class="bg-white border border-stone rounded p-5">
+        <h3 class="font-heading font-semibold text-navy text-sm mb-2">Standalone sustainable/environmental section</h3>
+        <p class="text-sm">You mentioned adding a section for sustainable, environmentally friendly, hygienic and low-allergen products with cork tiles and Marmoleum. I have held off on making this a standalone capability section for now. The reason is that with five capability sections the homepage grid already works well, and a sixth section with only two products in it would look thin. The sustainability angle is commercially relevant and I have captured it by adding cork and Marmoleum to the fit-outs sector page copy and the systems grid, where the buyers who care about this will actually see it. If the sustainable product range grows and you start delivering more of this work, it earns its own section later. For now, the positioning benefit is captured without creating something underdeveloped.</p>
+      </div>
+
+      <div class="bg-white border border-stone rounded p-5">
+        <h3 class="font-heading font-semibold text-navy text-sm mb-2">Supplier names on the public site</h3>
+        <p class="text-sm">You mentioned Altro, Tarkett, Armstrong, Karndean, Forbo and Portugal Cork. These are all useful to know and I have noted them for internal reference and for the photo direction (we know whose imagery to reference for aesthetic direction when shooting or sourcing). However, I have kept supplier names off the public site pages. The reason is positioning. Listing suppliers can read as "we install their products" rather than "we solve your flooring problems." The whole rebuild was about moving from installer positioning to commercial partner positioning. If any of these relationships function as a formal credential (authorised installer, certified applicator), that changes the equation and we can add them. Otherwise they work better in proposals, conversations and the capability statement than on the website.</p>
+      </div>
+    </div>
+
+
+    <h2 class="font-heading text-2xl font-bold text-navy">Supplier imagery as reference</h2>
+
+    <p>You mentioned that Altro, Tarkett, Armstrong and Karndean have great finished project photos on their websites that look like what JA Floors actually delivers. I cannot use their images directly, but they are extremely useful as a visual reference brief. If you can screenshot or link the specific images you like from those sites and send them through, we can use them as the target aesthetic when doing the photo editing work or when briefing any future photography. That is the most practical way to get the look you are after without any IP issues.</p>
+
+
+    <h2 class="font-heading text-2xl font-bold text-navy">Remaining questions</h2>
+
+    <div class="bg-stone rounded p-5 my-4 text-sm space-y-3">
+      <div><span class="font-heading font-semibold text-navy">1. Concrete finish photo:</span> Do you have any images of polished concrete, micro-topping or Architop work in a commercial setting? This is the only remaining placeholder on the site. If not, this is a good candidate for AI generation as part of the photo editing option.</div>
+
+      <div><span class="font-heading font-semibold text-navy">2. Josh site photo:</span> You mentioned wanting a shot of Josh on site reading plans with the crew in background. That is exactly what the photo guide recommends for the About page. When are you likely to have a suitable job where this can be shot? Happy to provide direction on framing and composition if useful.</div>
+
+      <div><span class="font-heading font-semibold text-navy">3. Wall sheeting hero image:</span> The capabilities page wall sheeting section currently uses the coved skirting install photo. Do you have or can you get a shot of a finished wall sheeting environment showing full wall coverage? Hospital bathroom, kitchen or clean room with wall sheet visible from floor to ceiling would be stronger than the install-in-progress shot.</div>
+
+      <div><span class="font-heading font-semibold text-navy">4. Sector priority order:</span> The four sector pages are currently ordered: Healthcare, Kitchens, Fit-outs, Clean Rooms. If you have a preference for which sector leads (based on where the most profitable or most desired work is), let me know and I will adjust the ordering in the navigation and on the homepage cards.</div>
+
+      <div><span class="font-heading font-semibold text-navy">5. Cork and Marmoleum:</span> You mentioned you are pricing cork tile jobs at the moment. If any of those come through, they would be worth photographing for the site. A cork floor in a finished office environment would be a strong image for the fit-outs page and would support the sustainability positioning without needing a separate section.</div>
+
+      <div><span class="font-heading font-semibold text-navy">6. Altro relationship:</span> Is the relationship with Altro (or any other supplier) formal enough to be called an authorised installer or certified applicator? If so, that is worth adding as a trust signal. If it is an informal supply arrangement, it is better left off the public site for the reasons outlined above.</div>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-stone">
+      <p class="text-sm text-slate/60"><a href="report.html" class="hover:text-sand-cta">Mockup Review</a> · <a href="photo-guide.html" class="hover:text-sand-cta">Photo Guide</a></p>
+      <p class="text-sm text-slate/60 mt-2">Lee Powell / Lumen and Lever</p>
+    </div>
+  </div></section>
+
+  <footer class="bg-navy-dark text-white/50 text-sm py-12">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+        <div class="col-span-2 md:col-span-1">
+          <h4 class="font-heading text-xs font-semibold uppercase tracking-wider text-white mb-3">JA Floors</h4>
+          <p class="leading-relaxed mb-2">Commercial flooring across Melbourne for fit-outs, healthcare, kitchens and controlled environments.</p>
+          <p>Phone: <a href="tel:0390460618" class="hover:text-sand">(03) 9046 0618</a></p>
+        </div>
+        <div><h4 class="font-heading text-xs font-semibold uppercase tracking-wider text-white mb-3">Sectors</h4><a href="healthcare.html" class="block py-0.5 hover:text-sand">Healthcare</a><a href="kitchens.html" class="block py-0.5 hover:text-sand">Kitchens</a><a href="fitouts.html" class="block py-0.5 hover:text-sand">Fit-outs</a><a href="cleanrooms.html" class="block py-0.5 hover:text-sand">Clean Rooms</a></div>
+        <div><h4 class="font-heading text-xs font-semibold uppercase tracking-wider text-white mb-3">Company</h4><a href="capabilities.html" class="block py-0.5 hover:text-sand">Capabilities</a><a href="about.html" class="block py-0.5 hover:text-sand">About</a><a href="quote.html" class="block py-0.5 hover:text-sand">Request a Quote</a><a href="contact.html" class="block py-0.5 hover:text-sand">Contact</a></div>
+        <div><h4 class="font-heading text-xs font-semibold uppercase tracking-wider text-white mb-3">Legal</h4><a href="privacy.html" class="block py-0.5 hover:text-sand">Privacy Policy</a><a href="terms.html" class="block py-0.5 hover:text-sand">Terms</a></div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/30">
+        <span>&copy; 2026 JA Floors. All rights reserved.</span>
+        <div class="flex gap-4"><a href="privacy.html" class="hover:text-sand">Privacy</a><a href="terms.html" class="hover:text-sand">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
